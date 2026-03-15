@@ -1,0 +1,28 @@
+{
+  "name": "odin-todo",
+  "version": "1.0.0",
+  "description": "todo web application made while following The Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youdi-m/odin-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/youdi-m/odin-todo/issues"
+  },
+  "homepage": "https://github.com/youdi-m/odin-todo#readme",
+  "devDependencies": {
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.0"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
+}
