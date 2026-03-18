@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	background-color: #EFE9E3;
+}
+
+.main_container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.sideBar_container {
+	background-color: #D9CFC7;
+	width: 20vw;
+	height: 100vh;
+	
+}
