@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Todo</title>
 	<link rel="stylesheet" href="./styles/main.css">
+	<script src="js/index.js" type="module" defer></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,19 +14,20 @@
 </head>
 <body>
 	<div class="main_container">
-		<div class="sideBar_container">
-			<div id="title">Todo</div>
-			<div class = sideBar_options>
-				<div>Search</div>
-				<div>Projects</div>
-				<div>Today</div>
-				<div>Upcoming</div>
-			</div>
-			
-		</div>
-		<div class="todo_container">
 
+		<div class="sideBar_container">
+			<div id="sideBar_search">Search</div>
+			<div id="sideBar_createNew">Create New</div>
+			<div id="sideBar_projects">Projects</div>
+			<div id="sideBar_starred">Starred</div>
 		</div>
+
+		<div class="todo_container">
+			<div class="today_container">Today</div>
+			<div class="week_container">This week</div>
+			<div class="upcoming_container">Upcoming</div>
+		</div>
+
 	</div>
 </body>
 </html>
