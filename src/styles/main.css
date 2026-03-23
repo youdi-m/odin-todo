@@ -1,5 +1,7 @@
 body {
 	margin: 0;
+	font-family: 'Inter', sans-serif;
+
 	background-color: #EFE9E3;
 }
 
@@ -7,11 +9,24 @@ body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+
 }
 
 .sideBar_container {
-	background-color: #D9CFC7;
 	width: 20vw;
 	height: 100vh;
+
+	padding-left: 2vw;
+
+	background-color: #D9CFC7;
 	
+}
+
+#title {
+	font-size: 60px;
+}
+
+.sideBar_options {
+	font-size: 20px;
+	margin-top: 2vh;
 }
