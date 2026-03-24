@@ -12,6 +12,35 @@ body {
 	background-color: #D8D2C2;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  
+	padding: 0;
+  margin: 0;
+
+  font: inherit;
+	color: #FAF7F0;
+  
+	cursor: pointer;
+}
+
+input {
+	display: flex;
+	border: none;
+  outline: none;
+  border-radius: 7px;
+
+	padding: 0;
+  margin: 5px;
+
+  font: inherit;
+	color: #FAF7F0;
+
+	background-color: #4A4947;
+}
+
 .main_container {
 	display: flex;
 	flex-direction: column;
@@ -34,6 +63,30 @@ body {
 
 	background-color: #4A4947;
 
+}
+
+.create_dropdown {
+	display:none;
+	position:absolute;
+
+	width:230px;
+	height:170px;
+
+	padding: 10px;
+	border-radius: 10px;
+
+	background-color: #B17457;
+}
+
+#sideBar_createNew {
+	position:relative;
+	justify-content: center;
+	align-items: center;
+}
+
+#sideBar_createNew:hover .create_dropdown,
+.createDropdown:hover {
+	display:block;
 }
 
 #sideBar_search,#sideBar_createNew,
@@ -63,6 +116,7 @@ body {
 	width: 500px;
 	height: 700px;
 
+	padding-top: 20px;
 	margin-left: 50px;
 	margin-right: 50px;
 

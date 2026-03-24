@@ -16,16 +16,42 @@
 	<div class="main_container">
 
 		<div class="sideBar_container">
-			<div id="sideBar_search">Search</div>
-			<div id="sideBar_createNew">Create New</div>
-			<div id="sideBar_projects">Projects</div>
-			<div id="sideBar_starred">Starred</div>
+
+			<div id="sideBar_search"><button>Search</button></div>
+			
+			<div id="sideBar_createNew">
+				<button>Create New</button>
+				<div class="create_dropdown">
+					<div id="create_title">Title<input></div>
+					<div id="create_description">Desc<input></div>
+					<div id="create_dueDate">Due By<input></div>
+					<div><button id="createButton">Create</button></div>
+				</div>
+			</div>
+
+			<div id="sideBar_starred">
+				<button>Starred</button>
+				<div class="starred_dropdown"></div>
+			</div>
+		
 		</div>
 
 		<div class="todo_container">
-			<div class="today_container">Today</div>
-			<div class="week_container">This week</div>
-			<div class="upcoming_container">Upcoming</div>
+			<div class="today_container">
+				<div class="title">
+					Today
+				</div>
+			</div>
+			<div class="week_container">
+				<div class="title">
+					This Week
+				</div>
+			</div>
+			<div class="upcoming_container">
+				<div class="title">
+					Upcoming
+				</div>
+			</div>
 		</div>
 
 	</div>
