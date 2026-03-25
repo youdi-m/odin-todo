@@ -8,7 +8,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
 <script defer src="main.js"></script></head>
 <body>
 	<div class="main_container">
@@ -16,27 +15,50 @@
 		<div class="sideBar_container">
 
 			<div class="sidebar_todo_container">
-				<div id="sideBar_addTask"><button>Add Task</button></div>
-				<div id="sideBar_search"><button>Search</button></div>
-				<div id="sideBar_today"><button>Today</button></div>
-				<div id="sideBar_week"><button>This Week</button></div>
-				<div id="sideBar_upcoming"><button>Upcoming</button></div>
-				<div id="sideBar_starred"><button>Starred</button></div>
+				<div id="sideBar_addTask"><button>➕ Add Task</button></div>
+				<div id="sideBar_search"><button>🔍 Search</button></div>
+				<div id="sideBar_today"><button>📄 Today</button></div>
+				<div id="sideBar_week"><button>📨 This Week</button></div>
+				<div id="sideBar_upcoming"><button>📥 Upcoming</button></div>
+				<div id="sideBar_starred"><button>⭐ Starred</button></div>
 			</div>
 
 			<div class="sidebar_projects_container">
-				<div><button>Projects</button></div>
+				<div><button>🚧 Projects</button></div>
+				<div id="projects_container">
+					# project 1
+				</div>
 			</div>
 
 		</div>
 
 		<div class="todo_container">
-			<div id="create_container"></div>
-			<div id="today_container"></div>
-			<div id="week_container"></div>
-			<div id="upcoming_container"></div>
-			<div id="starred_container"></div>
-			<div id="projects_container"></div>
+
+			<div id="create_container">
+				<div>Title<input id="create_title"></div>
+				<div>Description<input id="create_description"></div>
+				<div>Due Date<input id="create_dueDate" type="date"></div>
+				<div>Project<input></div>
+				<div><button id="create_addTask_button">Add Task</button></div>
+				<div id="create_closeContainer">X</div>
+			</div>
+
+			<div id="today_container">
+				<div class="title">Today</div>
+			</div>
+			<div id="week_container">
+				<div class="title">This Week</div>
+			</div>
+			<div id="upcoming_container">
+				<div class="title">Upcoming</div>
+			</div>
+			<div id="starred_container">
+				<div class="title">Starred</div>
+			</div>
+			<div id="projects_container">
+				<div class="title">Projects</div>
+			</div>
+
 		</div>
 	</div>
 </body>
