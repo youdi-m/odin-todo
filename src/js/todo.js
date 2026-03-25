@@ -1,4 +1,4 @@
-export function createTodo(title, dueDate) {
+export function createTodo(title, desc, dueDate) {
 	console.log('creating todo')
-	return {title, dueDate, done: false};
+	return {title, desc, dueDate, done: false};
 }

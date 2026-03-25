@@ -4,7 +4,10 @@
   "description": "todo web application made while following The Odin Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -13,17 +16,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/youdi-m/odin-todo/issues"
   },
   "homepage": "https://github.com/youdi-m/odin-todo#readme",
   "devDependencies": {
     "html-webpack-plugin": "^5.6.6",
+    "style-loader": "^4.0.0",
     "webpack": "^5.105.4",
-    "webpack-cli": "^7.0.0"
+    "webpack-cli": "^7.0.0",
+    "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
+    "css-loader": "^7.1.4",
     "date-fns": "^4.1.0"
   }
 }

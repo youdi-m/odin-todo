@@ -2,14 +2,13 @@ body {
 	box-sizing: border-box;
 
 	margin: 0;
-	padding: 10px;
 	font-family: 'Inter', sans-serif;
-	color: #FAF7F0;
+	color: #25343F;
 
 	outline: none;
 	user-select: none;
 
-	background-color: #D8D2C2;
+	background-color: #EAEFEF;
 }
 
 button {
@@ -21,7 +20,8 @@ button {
   margin: 0;
 
   font: inherit;
-	color: #FAF7F0;
+	font-weight: bold;
+	color: #25343F;
   
 	cursor: pointer;
 }
@@ -36,64 +36,52 @@ input {
   margin: 5px;
 
   font: inherit;
-	color: #FAF7F0;
+	color: #25343F;
 
-	background-color: #4A4947;
+	background-color: #BFC9D1;
 }
 
 .main_container {
+	width: 100vw;
+	height: 100vh;
+
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
 .sideBar_container {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: column;
+	width: 15vw;
+	height: 100vh;
 
-	box-sizing: border-box;
-
-	width: 95vw;
-	height: 50px;
-
-	border-radius: 10px;
-	padding-left: 20px;
-
-	background-color: #4A4947;
-
+	background-color: #BFC9D1;
 }
 
-.create_dropdown {
-	display:none;
-	position:absolute;
+.sidebar_todo_container,
+.sidebar_projects_container  {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	padding-left: 20px;
+	padding-top: 20px;
+}
 
-	width:230px;
-	height:170px;
+.sidebar_todo_container > div,
+.sidebar_projects_container > div {
+	margin-top: 5px;
+}
 
-	padding: 10px;
-	border-radius: 10px;
-
-	background-color: #B17457;
+.sidebar_todo_container button:hover,
+.sidebar_projects_container button:hover {
+	color: black;
+	font-weight: bolder;
 }
 
 #sideBar_createNew {
-	position:relative;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-}
-
-#sideBar_createNew:hover .create_dropdown,
-.createDropdown:hover {
-	display:block;
-}
-
-#sideBar_search,#sideBar_createNew,
-#sideBar_projects, #sideBar_starred {
-	font-weight: bold;
-	padding-left: 10px;
-	padding-right: 10px;
 }
 
 .todo_container {
@@ -104,30 +92,45 @@ input {
 	padding: 50px;
 }
 
-.today_container, .week_container,
-.upcoming_container {
-	display: flex;
-	align-items: center;
+#create_container {
+	display: none;
 	flex-direction: column;
+	position: absolute;
+
+	width: 550px;
+	height: 350px;
 	border-radius: 10px;
+	padding: 50px;
 
-	font-size: 40px;
+	background-color: #B17457;
+}
 
-	width: 500px;
-	height: 700px;
+#create_title, #create_desc, #create_dueDate {
+	width: 400px;
+	
+	padding:3px;
+	margin-top: 20px;
+	border-radius: 7px;
+} 
 
-	padding-top: 20px;
-	margin-left: 50px;
-	margin-right: 50px;
+#create_close {
+	display: flex;
+	position: absolute;
 
-	background-color: #4A4947;
+	top: 0;
+	right: 0;
+
+	margin: 10px;
+	font-size: 30px;
+
+	cursor: pointer;
 }
 
 .todo {
 	display: flex;
 	align-items: center;
 	
-	width: 300px;
+	width: 400px;
 	height: 15px;
 
 	font-size: large;
