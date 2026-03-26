@@ -1,3 +1,7 @@
+/*
+TODO: search and projects functions. also add priority to todo.
+*/
+
 import {format} from 'date-fns'
 
 import './styles/main.css'
