@@ -11,6 +11,11 @@ body {
 	background-color: #EAEFEF;
 }
 
+svg {
+	position: relative;
+	top: 4px;
+}
+
 button {
   background: none;
   border: none;
@@ -41,6 +46,11 @@ input {
 	
 
 	background-color: #EAEFEF;
+}
+
+#sideBar_search_input {
+	width: 150px;
+	float: right;
 }
 
 .main_container {

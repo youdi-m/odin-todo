@@ -7,7 +7,7 @@ import {parseISO} from 'date-fns'
 import {renderTodo_container} from './js/ui.js'
 
 const sideBar_addTask = document.getElementById("sideBar_addTask")
-const sideBar_search = document.getElementById("sideBar_search")
+const sideBar_search_input = document.getElementById("sideBar_search_input")
 const sideBar_today = document.getElementById("sideBar_today")
 const sideBar_week = document.getElementById("sideBar_week")
 const sideBar_upcoming = document.getElementById("sideBar_upcoming")
@@ -23,6 +23,7 @@ const create_title = document.getElementById("create_title")
 const create_description = document.getElementById("create_description")
 const create_dueDate = document.getElementById("create_dueDate")
 const create_addTask_button = document.getElementById("create_addTask_button")
+const create_project = document.getElementById("create_project")
 const create_closeContainer = document.getElementById("create_closeContainer")
 
 // make today visible at start
@@ -50,7 +51,7 @@ create_addTask_button.addEventListener('click', () => {
 	create_title.value = ""
 	create_description.value = ""
 	create_dueDate.value = ""
-	//createTodo_project.value = ""
+	create_project.value = ""
 
 })
 
